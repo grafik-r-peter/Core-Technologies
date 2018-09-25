@@ -1,0 +1,81 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>vid</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/vid.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header"><!-- /header begins -->
+
+			<nav id="menu">
+				<ul class="nav">
+					<li>
+						<img src="icons/team.svg">
+						<a href="#" title="Team">Team</a>
+					</li>
+
+					<li>
+						<img src="icons/inclined-pencil.svg">
+						<a href="#" title="Blog">Blog</a>
+					</li>
+
+					<li>
+						<img src="icons/play-movie.svg">
+						<a href="#" title="Videos">Videos</a>
+					</li>
+
+					<li>
+						<img src="icons/portfolio.svg">
+						<a href="#" title="Jobs">Jobs</a>
+					</li>
+
+					<li>
+						<img src="icons/contact.svg">
+						<a href="#" title="Contact">Contact</a>
+					</li>
+
+				</ul>
+			</nav>
+		</header>
+		<div id="herotext">
+			<h1 class="meetus"></h1>
+			<h3 class="phrase"></h3>
+		</div>
+		</header><!-- /header ends-->
+		<div id="top-content">
+			<video autoplay muted loop id="myVideo">
+		 		 <source src="Web Designer Cartoon.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="content">
+  			<h1>Heading</h1>
+  			<p>Lorem ipsum...</p>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  			<button id="myBtn" onclick="myFunction()">Pause</button>
+		</div><!--main-content ends-->
+		<div id="footer"> <!-- /footer begins here -->
+			<div class="policy"></div>
+			<div class="logo"></div>
+		</div> <!-- /footer ends here -->
+	</div>
+	<script>
+		var video = document.getElementById("myVideo");
+
+		// Get the button
+		var btn = document.getElementById("myBtn");
+
+		// Pause and play the video, and change the button text
+		function myFunction() {
+			if (video.paused) {
+				video.play();
+				btn.innerHTML = "Pause";
+			} else {
+	        	video.pause();
+	        	btn.innerHTML = "Play";
+	    	}
+		}
+	</script>
+</body>
+</html>
