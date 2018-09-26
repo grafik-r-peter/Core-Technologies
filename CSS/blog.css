@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+.parallax { 
+	width:100%;
+    height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text {
+
+	 font-family: 'Raleway', sans-serif;
+	 background-color: #08090c;
+	 font-size: 20px;
+	 color:white;
+	 text-align: center;
+	 padding: 40px 80px 40px 80px;
+	 margin: auto;
+	 }
+
+#imag1 { 
+    background-image: url("img/office-620822_1920.jpg");
+}
+
+.imags { 
+    position: absolute;
+    background-image:  linear-gradient(transparent, black);
+ 	left: 0;
+    height: 700px; 
+    width: 100%;
+
+}
+
+#imag2 { 
+    background-image: url("img/technology-785742_1920.jpg");
+}
+
+#imag3 { 
+    background-image: url("img/home-office-336373_1920.jpg");
+}
+
+#imag4 { 
+    background-image: url("img/technology-792180_1920.jpg");
+}
+
+.newpost {
+	padding: 20px 200px;
+	background-color:#08090c;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+#send {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	width: 100px;
+	height: 50px;
+}
+
+#post {
+	width: 80%;
+	height: 300px;
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#picture {
+	height: 30px;
+	width: 20%;
+	margin-left: 86px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#name {
+	height: 30px;
+	width: 20%;
+	margin-left: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+
+#title {
+	color: white;
+    text-shadow: 4px 4px 8px #000000;
+    font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 600px;
+}
+
+#title2 {
+	color: white;
+    text-shadow: 4px 4px 8px #000000;
+    font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 600px;
+	height: 100px; 
+}
