@@ -4,7 +4,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="CSS/style.css">
+	<style type="text/css" media="screen">
 
+		#header {
+			height: 280px;
+		}
+
+		.image-snippet1 {
+			background-image: url(img/header.png);
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: contain;
+		}
+
+		.image-snippet2 {
+			background-image: url(img/header-eva.png);
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: contain;
+		}
+
+	</style>
 	<title></title>
 
 </head>
@@ -46,22 +66,21 @@
 
 			</nav>
 			<div id="header-img">
-				<img src="img/header.png">
-			</div>
 
-			
+			</div>
 
 			<!-- <div id="herotext">
 				<h1 class="meetus">Meet our team</h1>
 				<h3 class="phrase"></h3>
 			</div> -->
+
 		</header>  <!-- /header ends-->
 
 		<div id="content"> <!-- /main content begins -->
 			<div id="content-members">
 				<div class="teamMember">
 					
-					<div class="overlay-base overlay1" id="call-overlay">
+					<div class="overlay-base overlay1" id="team0">
 						<img src="img/andras_500x500.jpg">
 					</div>
 
@@ -72,7 +91,7 @@
 				</div>
 
 				<div class="teamMember">
-					<div class="overlay-base overlay2" id="call-overlay" >
+					<div class="overlay-base overlay2" id="team1" >
 						<img src="img/eva_500x500.jpg">
 					</div>
 					<div class="teaser">
@@ -82,7 +101,7 @@
 				</div>
 				
 				<div class="teamMember">
-					<div class="overlay-base overlay3" id="call-overlay">
+					<div class="overlay-base overlay3" id="team2">
 						<img src="img/luisa_500x500.jpg">
 					</div>
 
@@ -93,7 +112,7 @@
 				</div>
 
 				<div class="teamMember">
-					<div class="overlay-base overlay4" id="call-overlay">
+					<div class="overlay-base overlay4" id="team3">
 						<img src="img/nabil_500x500.jpg">
 					</div>
 					<div class="teaser">
@@ -103,7 +122,7 @@
 				</div>
 
 				<div class="teamMember">					
-					<div class="overlay-base overlay5" id="call-overlay">
+					<div class="overlay-base overlay5" id="team4">
 						<img src="img/roman_500x500.jpg">
 					</div>
 
@@ -130,14 +149,33 @@
 <script type="text/javascript" src="JS/script.js"></script>
 <script type="text/javascript">
 
-var changeOverlay = document.getElementById('call-overlay');
-var ausgabe = document.getElementById('menu');
-changeOverlay.addEventListener('mouseover', mouseOver);
-changeOverlay.addEventListener('mouseout', mouseOut);
 
-function mouseOver() { 
-	if (document.getElementsByClassName('overlay1'))
-	menu.style.background = "#f3f3f3";
+
+var navToOverlay = document.getElementById('menu');
+for (i=0; i < 5; i++) {
+	var changeOverlay = document.getElementById('team'+i);
+	changeOverlay.addEventListener('mouseover', function(){ mouseOver(this)});
+	changeOverlay.addEventListener('mouseout', mouseOut);
+}
+
+
+function mouseOver(abc) { 
+	if (abc.id == 'team0') {
+	menu.style.background = "#33cc33";
+//	header.classList.add("image-snippet1");
+//	header.style.background = "url(img/header.png)";
+	} 	else if (abc.id == 'team1') {
+		menu.style.background = "#ff9900"; 
+//		header.classList.add("image-snippet2");
+	} 	else if (abc.id == 'team2') {
+		menu.style.background = "#a22970"; 
+	} 	else if (abc.id == 'team3') {
+		menu.style.background = "#b01616"; 
+	} 	else if (abc.id == 'team5') {
+		menu.style.background = "#286f75"; 
+	} 	else {
+		return false;
+	}	
 }
 
 function mouseOut() {
