@@ -18,7 +18,8 @@ nav {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  transition: 0.5; }
 
 .teamMember {
   width: 30%;
