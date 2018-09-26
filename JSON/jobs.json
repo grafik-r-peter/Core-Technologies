@@ -1,20 +1,23 @@
 var newJobs =[{
+	"Picture": "img/code-2620118_1920.jpg",
 	"Position": "Marketing Assistant",
 	"Schedule": "part time",
 	"CompanyName": "Junior Developers GmbH", 
 	"Contact": "012345678910",
 	"Location": "München",
 	"Salary": "790,-",
-	"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+	"Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
 }, {
+	"Picture": "img/beach-1031523_1920.jpg",
 	"Position": "Lifeguard",
 	"Schedule": "full time",
 	"CompanyName": "Junior Developers GmbH",
 	"Contact": "apply@today.com",
 	"Location": "Vienna",
 	"Salary": "1190,-",
-	"Description": "Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+	"Description": "Ipsum lorem dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipisicing elit, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipisicing elit, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipisicing elit, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. "
 }, {
+	"Picture": "img/cup-of-coffee-1280537_1920.jpg",
 	"Position": "Barista",
 	"Schedule": "full time",
 	"CompanyName": "Senior Developers GmbH", 
