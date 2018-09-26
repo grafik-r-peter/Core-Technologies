@@ -9,8 +9,11 @@
 	<div id="wrapper">
 		<header id="header"><!-- /header begins -->
 
-			<nav id="menu">
-				<ul class="nav">
+			<nav id="menu" class="nav-overlay">
+
+				<button class="active" onclick="expandMenu()">Home</button>
+
+				<ul class="nav" id="toggle">
 					<li>
 						<img src="../icons/team.svg">
 						<a href="#" title="Team">Team</a>
@@ -66,5 +69,7 @@
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
 	</div>
+
+	<script type="text/javascript" src="../JS/script.js"></script>
 </body>
 </html>

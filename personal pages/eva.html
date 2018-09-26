@@ -3,36 +3,39 @@
 <head>
 	<title>member-page</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="CSS/Nabil.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Nabil.css">
 </head>
 <body>
 	<div id="wrapper">
 		<header id="header"><!-- /header begins -->
 
-			<nav id="menu">
-				<ul class="nav">
+			<nav id="menu" class="nav-overlay">
+
+				<button class="active" onclick="expandMenu()">Home</button>
+
+				<ul class="nav" id="toggle">
 					<li>
-						<img src="icons/team.svg">
+						<img src="../icons/team.svg">
 						<a href="#" title="Team">Team</a>
 					</li>
 
 					<li>
-						<img src="icons/inclined-pencil.svg">
+						<img src="../icons/inclined-pencil.svg">
 						<a href="#" title="Blog">Blog</a>
 					</li>
 
 					<li>
-						<img src="icons/play-movie.svg">
+						<img src="../icons/play-movie.svg">
 						<a href="#" title="Videos">Videos</a>
 					</li>
 
 					<li>
-						<img src="icons/portfolio.svg">
+						<img src="../icons/portfolio.svg">
 						<a href="#" title="Jobs">Jobs</a>
 					</li>
 
 					<li>
-						<img src="icons/contact.svg">
+						<img src="../icons/contact.svg">
 						<a href="#" title="Contact">Contact</a>
 					</li>
 
@@ -46,7 +49,7 @@
 		</header><!-- /header ends-->
 		<div id="member-content"> <!-- /main content begins -->
 			<div class="member-pic">
-				<img src="img/eva_500x500.jpg" alt="eva">
+				<img src="../img/eva_500x500.jpg" alt="eva">
 				<h2>
 					Eva Timea Bukli
 				</h2>
@@ -66,5 +69,8 @@
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
 	</div>
+
+	<script type="text/javascript" src="../JS/script.js"></script>
+
 </body>
 </html>
