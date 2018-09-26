@@ -4,7 +4,7 @@ body {
   margin: 0; }
 
 #header {
-  height: 280px;
+  max-height: 280px;
   background: #272a32;
   overflow: hidden; }
 
@@ -84,23 +84,20 @@ h3 {
   opacity: 1;
   animation: pop 0.3s linear 1; }
 
-#overlay1 {
+.overlay1 {
   background: #33cc33; }
 
-#overlay2 {
+.overlay2 {
   background: #ff9900; }
 
-#overlay3 {
+.overlay3 {
   background: #a22970; }
 
-#overlay4 {
+.overlay4 {
   background: #b01616; }
 
-#overlay5 {
+.overlay5 {
   background: #286f75; }
-
-.member-overlay5 {
-  background: #33cc33; }
 
 .call-overlay {
   display: block; }
@@ -166,8 +163,14 @@ nav li img {
   margin: 0 auto;
   margin-top: 40px; }
 
+.phrase {
+  color: white;
+  text-align: center;
+  padding: 70px 20px; }
+
 .member-pic {
-  width: 30%; }
+  width: 30%;
+  text-align: center; }
 
 .member-disc {
   width: 70%;
