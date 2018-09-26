@@ -3,6 +3,7 @@
 
 
 
+
 /// IMPORTING PARTIALS /// 
 @import "mixins"
 @import "variables"
@@ -14,7 +15,7 @@ body
 	margin: 0
 
 #header
-	height: 280px
+	max-height: 280px
 	background: #272a32
 	overflow: hidden
 
@@ -91,25 +92,22 @@ h3
 	opacity: 1
 	animation: pop 0.3s linear 1
 
-#overlay1
+.overlay1
 	background: $andrew
 
-#overlay2
+.overlay2
 	background: $eva
 
-#overlay3
+.overlay3
 	background: $luisa
 
-#overlay4
+.overlay4
 	background: $nabil
 
-#overlay5
+.overlay5
 	background: $roman
 
 /// OVERLAY NAVBAR /// 
-
-.member-overlay5
-	background: #33cc33
 
 .call-overlay
 	display: block
@@ -178,3 +176,7 @@ nav
 	li img
 		width: 30px
 		height: auto
+
+
+	/// MEDIA QUERIES ///
+

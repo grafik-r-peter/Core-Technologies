@@ -51,18 +51,17 @@
 
 			
 
-			<div id="herotext">
+			<!-- <div id="herotext">
 				<h1 class="meetus">Meet our team</h1>
 				<h3 class="phrase"></h3>
-			</div>
-		</header><!-- /header ends-->
+			</div> -->
+		</header>  <!-- /header ends-->
 
 		<div id="content"> <!-- /main content begins -->
 			<div id="content-members">
 				<div class="teamMember">
 					
-					<div class="overlay-base call-overlay" id="overlay1" 
-					onmouseenter="colorOverlayNav();" onmouseleave="colorOverlayNav();">
+					<div class="overlay-base overlay1" id="call-overlay">
 						<img src="img/andras_500x500.jpg">
 					</div>
 
@@ -72,10 +71,8 @@
 					</div>
 				</div>
 
-				
-
 				<div class="teamMember">
-					<div class="overlay-base" id="overlay2" >
+					<div class="overlay-base overlay2" id="call-overlay" >
 						<img src="img/eva_500x500.jpg">
 					</div>
 					<div class="teaser">
@@ -83,11 +80,9 @@
 						<p>more about Luisa</p>
 					</div>
 				</div>
-
 				
-
 				<div class="teamMember">
-					<div class="overlay-base" id="overlay3">
+					<div class="overlay-base overlay3" id="call-overlay">
 						<img src="img/luisa_500x500.jpg">
 					</div>
 
@@ -96,10 +91,9 @@
 						<p>more about Luisa</p>
 					</div>
 				</div>
-				
 
 				<div class="teamMember">
-					<div class="overlay-base" id="overlay4">
+					<div class="overlay-base overlay4" id="call-overlay">
 						<img src="img/nabil_500x500.jpg">
 					</div>
 					<div class="teaser">
@@ -107,10 +101,9 @@
 						<p>more about Luisa</p>
 					</div>
 				</div>
-				
 
 				<div class="teamMember">					
-					<div class="overlay-base" id="overlay5" class="call-overlay">
+					<div class="overlay-base overlay5" id="call-overlay">
 						<img src="img/roman_500x500.jpg">
 					</div>
 
@@ -118,7 +111,6 @@
 						<span class="memberName">Lorem Ipsum </span>
 						<p>more about Luisa</p>
 					</div>
-
 				</div>
 
 				<div id="insertMember" class="teamMember">
@@ -138,15 +130,22 @@
 <script type="text/javascript" src="JS/script.js"></script>
 <script type="text/javascript">
 
-			
+var changeOverlay = document.getElementById('call-overlay');
+var ausgabe = document.getElementById('menu');
+changeOverlay.addEventListener('mouseover', mouseOver);
+changeOverlay.addEventListener('mouseout', mouseOut);
 
-function colorOverlayNav() {
-	if (document.getElementById("menu").classname === "call-overlay") {
-		document.getElementById("menu").classname = "call-overlay member-overlay5"
-	} else {
-		document.getElementById("menu").classname = "call-overlay"
-	}
-}	
+function mouseOver() { 
+	if (document.getElementsByClassName('overlay1'))
+	menu.style.background = "#f3f3f3";
+}
+
+function mouseOut() {
+	menu.style.background = "rgba(93, 116, 117, 0.6)"
+}
+
+
+
 	
 </script>
 </body>
