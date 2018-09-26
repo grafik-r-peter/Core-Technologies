@@ -24,6 +24,7 @@
     		background-size: contain;
 		}
 
+
 	</style>
 	<title></title>
 
@@ -133,7 +134,7 @@
 				</div>
 
 				<div id="insertMember" class="teamMember">
-					
+					<div id="res"></div>
 					
 				</div>
 			</div>
@@ -143,6 +144,13 @@
 			<div class="policy"></div>
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
+		<div>
+		<input id="img" type="text" placeholder="add url">
+		<input id="name" type="text" placeholder="name">
+		<input id="btn" type="submit" value="Add new members">
+		<div id="container">
+		</div>
+	</div>
 		
 	</div>
 
@@ -182,9 +190,14 @@ function mouseOut() {
 	menu.style.background = "rgba(93, 116, 117, 0.6)"
 }
 
+function member(){
+			var c=document.getElementById("name").value;
+			var a=document.getElementById("img").value;
+return document.getElementById("content-members").innerHTML+="<div class='teamMember'><div><img src='img/"+a+"'></div><div class='teaser'><span class='memberName'>"+c+"</span><p>more about Luisa</p></div></div>"
+		}
+		document.getElementById("btn").onclick=member;
 
 
-	
 </script>
 </body>
 
