@@ -12,8 +12,7 @@
 <body>
 	<div id="wrapper">
 		<header id="header"><!-- /header begins -->
-
-			<nav id="menu">
+			<nav id="menu" class="nav-overlay">
 
 				<button class="active" onclick="expandMenu()">Home</button>
 
@@ -46,6 +45,11 @@
 				</ul>
 
 			</nav>
+			<div id="header-img">
+				<img src="img/header.png">
+			</div>
+
+			
 
 			<div id="herotext">
 				<h1 class="meetus">Meet our team</h1>
@@ -54,55 +58,61 @@
 		</header><!-- /header ends-->
 
 		<div id="content"> <!-- /main content begins -->
-
+			<div id="content-members">
 				<div class="teamMember">
-					<img src="img/andras_500x500.jpg">
-
-					<span class="memberName">Lorem Ipsum </span>
-						<p>more about Luisa</p>
-				</div>
-
-				
-
-				<div class="teamMember">
-					<img src="img/eva_500x500.jpg">
-
-					<div id="overlay-base" class="overlay2"></div>
-
-					<div class="teaser">
-						<span class="memberName">Lorem Ipsum </span>
-						<p>more about Luisa</p>
-					</div>
-				</div>
-
-				
-
-				<div class="teamMember">
-					<img src="img/luisa_500x500.jpg">
-
-					<div id="overlay-base" class="overlay3"></div>
-
-					<div class="teaser">
-						<span class="memberName">Lorem Ipsum </span>
-						<p>more about Luisa</p>
-					</div>
-				</div>
-				
-
-				<div class="teamMember">
-					<img src="img/nabil_500x500.jpg">
-					<div id="overlay-base" class="overlay4"></div>
-					<div class="teaser">
-						<span class="memberName">Lorem Ipsum </span>
-						<p>more about Luisa</p>
-					</div>
-				</div>
-				
-
-				<div class="teamMember">
-					<img src="img/roman_500x500.jpg">
 					
-					<div id="overlay-base" class="overlay5"></div>
+					<div class="overlay-base call-overlay" id="overlay1" 
+					onmouseenter="colorOverlayNav();" onmouseleave="colorOverlayNav();">
+						<img src="img/andras_500x500.jpg">
+					</div>
+
+					<div class="teaser">
+						<span class="memberName">Lorem Ipsum </span>
+						<p>more about Luisa</p>
+					</div>
+				</div>
+
+				
+
+				<div class="teamMember">
+					<div class="overlay-base" id="overlay2" >
+						<img src="img/eva_500x500.jpg">
+					</div>
+					<div class="teaser">
+						<span class="memberName">Lorem Ipsum </span>
+						<p>more about Luisa</p>
+					</div>
+				</div>
+
+				
+
+				<div class="teamMember">
+					<div class="overlay-base" id="overlay3">
+						<img src="img/luisa_500x500.jpg">
+					</div>
+
+					<div class="teaser">
+						<span class="memberName">Lorem Ipsum </span>
+						<p>more about Luisa</p>
+					</div>
+				</div>
+				
+
+				<div class="teamMember">
+					<div class="overlay-base" id="overlay4">
+						<img src="img/nabil_500x500.jpg">
+					</div>
+					<div class="teaser">
+						<span class="memberName">Lorem Ipsum </span>
+						<p>more about Luisa</p>
+					</div>
+				</div>
+				
+
+				<div class="teamMember">					
+					<div class="overlay-base" id="overlay5" class="call-overlay">
+						<img src="img/roman_500x500.jpg">
+					</div>
 
 					<div class="teaser">
 						<span class="memberName">Lorem Ipsum </span>
@@ -115,10 +125,10 @@
 					
 					
 				</div>
-
+			</div>
 		</div> <!-- /main content ends -->
 
-		<div id="footer"> <!-- /footer begins here -->
+		<div id="footer"> <!-- footer begins here -->
 			<div class="policy"></div>
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
@@ -126,6 +136,19 @@
 	</div>
 
 <script type="text/javascript" src="JS/script.js"></script>
+<script type="text/javascript">
+
+			
+
+function colorOverlayNav() {
+	if (document.getElementById("menu").classname === "call-overlay") {
+		document.getElementById("menu").classname = "call-overlay member-overlay5"
+	} else {
+		document.getElementById("menu").classname = "call-overlay"
+	}
+}	
+	
+</script>
 </body>
 
 </html>

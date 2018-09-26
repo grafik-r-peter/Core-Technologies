@@ -10,23 +10,32 @@
 
 /// BASIC STYLING /// 
 
+body 
+	margin: 0
+
 #header
-	background: url("../img/header.jpgdsa")
 	height: 280px
+	background: #272a32
+	overflow: hidden
+
+#header-img
+	@include wrap
+	text-align: center
+	img
+		width: 100%
 
 nav
 	background-color: rgba(93, 116, 117, 0.6)
 .nav
 	@include wrap
 
-#content 
+#content-members
 	@include wrap
 	@include flexWrap
-
+	margin-top: -50px
 
 .teamMember
-	width: 30%
-	margin: 10px
+	margin: 0 20px
 	text-align: center
 	img 
 		width: 100%
@@ -42,9 +51,9 @@ nav
 	p	
 		font-size: 0.9em
 
-
-
-
+#insertMember
+	width: 0
+	margin: 0
 
 
 /// TYPO ///
@@ -62,39 +71,48 @@ h3
 	font-size: 28px
 
 
-
-
-
-
-
 /// COLOR OVERLAYS ///
-#overlay-base
+
+.overlay-base
 	position: relative
+	border-radius: 100%
+	border: #fff
+	border-style: solid
+	border-width: 5px
 
-#overlay-base:after
-	position: absolute
-	content: ""
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	opacity: 0.5
+	img 
+		opacity: 0.4
+		display: block
+		width: 100%
+		height: auto
+		transition: .5s ease
 
-.overlay1
+.overlay-base:hover img
+	opacity: 1
+	animation: pop 0.3s linear 1
+
+#overlay1
 	background: $andrew
 
-.overlay2
+#overlay2
 	background: $eva
 
-.overlay3
+#overlay3
 	background: $luisa
 
-.overlay4
+#overlay4
 	background: $nabil
 
-.overlay5
+#overlay5
 	background: $roman
 
+/// OVERLAY NAVBAR /// 
+
+.member-overlay5
+	background: #33cc33
+
+.call-overlay
+	display: block
 
 
 /// NAV BAR /// 
