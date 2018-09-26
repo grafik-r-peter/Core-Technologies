@@ -1,7 +1,12 @@
 /*
 Error: File to import not found or unreadable: nav.
+
        Load path: C:/Users/luisa/Desktop/My projects/Core-Technologies/CSS
         on line 27 of C:\Users\luisa\Desktop\My projects\Core-Technologies\CSS\vid.sass
+
+       Load path: C:/Users/Nab/Desktop/CodeFactory/Projects/Core-Technologies/CSS
+        on line 27 of C:\Users\Nab\Desktop\CodeFactory\Projects\Core-Technologies\CSS\vid.sass
+
 
 22:   color: #fff
 23:   cursor: pointer
@@ -11,7 +16,9 @@ Error: File to import not found or unreadable: nav.
 27: @import "nav"
 
 Backtrace:
-C:\Users\luisa\Desktop\My projects\Core-Technologies\CSS\vid.sass:27
+
+C:\Users\Nab\Desktop\CodeFactory\Projects\Core-Technologies\CSS\vid.sass:27
+
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -49,4 +56,5 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
+
   content: "Error: File to import not found or unreadable: nav.\A        Load path: C:/Users/luisa/Desktop/My projects/Core-Technologies/CSS\A         on line 27 of C:\Users\luisa\Desktop\My projects\Core-Technologies\CSS\vid.sass\A \A 22:   color: #fff\A 23:   cursor: pointer\A 24:   &:hover\A 25:     background: #ddd\A 26:     color: black\A 27: @import \"nav\""; }
