@@ -24,7 +24,7 @@
 	 }
 
 #imag1 { 
-    background-image: url("img/office-620822_1920.jpg");
+    background-image: url("../img/office-620822_1920.jpg");
 }
 
 .imags { 
@@ -37,15 +37,15 @@
 }
 
 #imag2 { 
-    background-image: url("img/technology-785742_1920.jpg");
+    background-image: url("../img/technology-785742_1920.jpg");
 }
 
 #imag3 { 
-    background-image: url("img/home-office-336373_1920.jpg");
+    background-image: url("../img/home-office-336373_1920.jpg");
 }
 
 #imag4 { 
-    background-image: url("img/technology-792180_1920.jpg");
+    background-image: url("../img/technology-792180_1920.jpg");
 }
 
 .newpost {

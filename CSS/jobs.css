@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.parallax { 
+	width:100%;
+    height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text {
+
+	 font-family: 'Raleway', sans-serif;
+	 background-color: #08090c;
+	 font-size: 20px;
+	 color:white;
+	 text-align: center;
+	 padding: 40px 80px 40px 80px;
+	 margin: auto;
+}
+
+.imags { 
+    position: absolute;
+    background-image:  linear-gradient(transparent, black);
+ 	left: 0;
+    height: 700px; 
+    width: 100%;
+}
