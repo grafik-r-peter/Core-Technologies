@@ -243,6 +243,7 @@ div > p:last-child {
     flex-wrap: wrap;
     width: 100%;
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0;
+    text-align: justify; } }
 
 /*# sourceMappingURL=Nabil.css.map */
