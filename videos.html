@@ -4,78 +4,96 @@
 	<title>vid</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/vid.css">
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 	<div id="wrapper">
-		<header id="header"><!-- /header begins -->
-
+		<header id="header" class="headerClass"><!-- /header begins -->
 			<nav id="menu" class="nav-overlay">
-
-				<button class="active" onclick="expandMenu()">Home</button>
+				<div class="active" onclick="expandMenu()">
+					<img src="img/burger.svg" alt="burger">
+				</div>
 
 				<ul class="nav" id="toggle">
-					<li>
-						<img class="nav-icon" src="icons/team.svg">
-						<a href="index.html" title="Team">Team</a>
-					</li>
+					<a href="index.html" title="Team">
+						<li><img class="nav-icon" src="icons/team.svg">Team</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="icons/inclined-pencil.svg">
-						<a href="blog.html" title="Blog">Blog</a>
-					</li>
+					<a href="blog.html" title="Blog">
+						<li><img class="nav-icon" src="icons/inclined-pencil.svg">Blog</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="icons/play-movie.svg">
-						<a href="videos.html" title="Videos">Videos</a>
-					</li>
+					<a href="videos.html" title="Videos">
+						<li><img class="nav-icon" src="icons/play-movie.svg">Videos</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="icons/portfolio.svg">
-						<a href="jobs.html" title="Jobs">Jobs</a>
-					</li>
+					<a href="jobs.html" title="Jobs">
+						<li><img class="nav-icon" src="icons/portfolio.svg">Jobs</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="icons/contact.svg">
-						<a href="contact.html" title="Contact">Contact</a>
-					</li>
+					<a href="contact.html" title="Contact">
+						<li><img class="nav-icon" src="icons/contact.svg">Contact</li>
+					</a>
 
 				</ul>
-			</nav>
 
-			<div id="herotext">
-				<h1 class="meetus"></h1>
-				<h3 class="phrase"></h3>
+			</nav>
+			<div id="header-img">
+
 			</div>
-		</header><!-- /header ends-->
+
+
+			<!-- <div id="herotext">
+				<h1 class="meetus">Meet our team</h1>
+				<h3 class="phrase"></h3>
+			</div> -->
+
+		</header> 
 		<div id="main-content"><!-- /main-content begins -->
 			<div class="row">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/QWScwuFWoAU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>	
+				<div class="left">
+				<iframe class="vid" src="https://www.youtube.com/embed/QWScwuFWoAU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>	
 				</iframe>
-				<h3 class="text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
+				</div>
+				<div class="right">
+					<p class="text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
 
-				</h3>
+					</p>
+				</div>
 			</div>
 			<div class="row">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/pIxp_SR9tE4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-				</iframe>
-				<h3 class="text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
-				</h3>
+				<div class="left">
+					<iframe class="vid" src="https://www.youtube.com/embed/pIxp_SR9tE4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="right">
+					<p class="text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
+					</p>
+				</div>
 			</div>
 			<div class="row">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/f3EbDbm8XqY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-				</iframe>
-				<h3 class="text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
-				</h3>
+				<div class="left">
+					<iframe class="vid" src="https://www.youtube.com/embed/f3EbDbm8XqY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="right">
+					<p class="text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
+					</p>
+				</div>
 			</div>
 			<div class="row">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/pEnJR8SmmXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-				</iframe>
-				<h3 class="text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
-				</h3>
+				<div class="left">
+					<iframe class="vid" src="https://www.youtube.com/embed/pEnJR8SmmXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+					</iframe>
+				</div>
+				<div class="right">
+					<p class="text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada fames ac turpis. Egestas dui id ornare arcu. Senectus et netus et malesuada fames ac. Libero id faucibus nisl tincidunt eget nullam non nisi est. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Vel elit scelerisque mauris pellentesque. Risus at ultrices mi tempus imperdiet. Et tortor consequat id porta nibh. Ultricies mi quis hendrerit dolor magna. Nulla facilisi etiam dignissim diam quis enim. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Ultrices in iaculis nunc sed augue lacus. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim. Amet cursus sit amet dictum sit amet justo donec. Sit amet nisl purus in mollis nunc sed. Amet dictum sit amet justo.
+					</p>
+				</div>
 			</div>
 		</div><!--main-content ends-->
 		<div id="footer"> <!-- /footer begins here -->
@@ -83,7 +101,9 @@
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
 	</div>
-	<script type="text/javascript" src="JS/script.js"></script>
+	<script>
+// Get the video
+
 
 </body>
 </html>
