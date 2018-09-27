@@ -4,43 +4,43 @@
 	<title>member-page</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../CSS/Nabil.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
 </head>
 <body>
 	<div id="wrapper">
-		<header id="header"><!-- /header begins -->
-
+		<header id="header" class="headerClass"><!-- /header begins -->
 			<nav id="menu" class="nav-overlay">
-
-				<button class="active" onclick="expandMenu()">Home</button>
+				<div class="active" onclick="expandMenu()">
+					<img src="../img/burger.svg" alt="burger">
+				</div>
 
 				<ul class="nav" id="toggle">
-					<li>
-						<img class="nav-icon" src="../icons/team.svg">
-						<a href="../index.html" title="Team">Team</a>
-					</li>
+					<a href="../index.html" title="Team">
+						<li><img class="nav-icon" src="../icons/team.svg">Team</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="../icons/inclined-pencil.svg">
-						<a href="../blog.html" title="Blog">Blog</a>
-					</li>
+					<a href="../blog.html" title="Blog">
+						<li><img class="nav-icon" src="../icons/inclined-pencil.svg">Blog</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="../icons/play-movie.svg">
-						<a href="../videos.html" title="Videos">Videos</a>
-					</li>
+					<a href="../videos.html" title="Videos">
+						<li><img class="nav-icon" src="../icons/play-movie.svg">Videos</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="../icons/portfolio.svg">
-						<a href="../jobs.html" title="Jobs">Jobs</a>
-					</li>
+					<a href="../jobs.html" title="Jobs">
+						<li><img class="nav-icon" src="../icons/portfolio.svg">Jobs</li>
+					</a>
 
-					<li>
-						<img class="nav-icon" src="../icons/contact.svg">
-						<a href="../contact.html" title="Contact">Contact</a>
-					</li>
+					<a href="../contact.html" title="Contact">
+						<li><img class="nav-icon" src="../icons/contact.svg">Contact</li>
+					</a>
 
 				</ul>
 			</nav>
+
+			<div id="header-img">
+
+			</div>
 
 			<div id="herotext">
 				<h1 class="meetus"></h1>
@@ -65,9 +65,21 @@
 			</div>
 		</div> <!-- /main content ends -->
 
-		<div id="footer"> <!-- /footer begins here -->
-			<div class="policy"></div>
-			<div class="logo"></div>
+		<div id="footer"> <!-- footer begins here -->
+			<div class="footerpics">
+				<div class="policy">
+					<a href="https://www.youtube.com/watch?v=I_izvAbhExY">
+						<img src="../img/shield-1086703_640.png">
+					</a>
+					<p class="policytext">Privacy Policy</p>
+				</div>
+				<div class="logo">
+					<img src="../img/codefactory-vienna-logo.png">
+				</div>
+			</div>
+			<div class="teamname">
+				<p>The Git Monkeys - CodeFactory 2018</p>
+			</div>
 		</div> <!-- /footer ends here -->
 	</div>
 

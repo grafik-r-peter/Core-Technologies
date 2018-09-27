@@ -287,3 +287,80 @@ nav
 		
 	#mobile-list
 		display: none
+
+
+/// Footer css ///
+
+#footer
+	width: 100%
+	height: 200px
+	background-color: #272a32
+
+.footerpics
+	display: flex
+	justify-content: space-between
+	padding: 45px 0px 0px 35px
+
+.policy
+		img
+			width: 100px
+			&:hover .policytext
+				visibility: visible
+				opacity: 1
+
+.policytext
+	position: relative
+	color: #fff
+	visibility: hidden
+	opacity: 0
+	transition: opacity .2s, visibility .2s
+
+.logo 
+	img
+		width: 250px
+		height: 100px
+
+.teamname
+	/// width: 100%; was no need for that ///
+	color: white
+	text-align: center
+	margin: -45px
+
+/// Footer CSS ends ///
+/// Footer @media ///
+@media only screen and (max-width: 750px)
+	.policytext, .footerpics 
+		img
+			display: none
+	.teamname
+		padding: 80px 0 0 0
+
+/// Footer @media ends ///
+@media only screen and (max-width: 530px)
+	.active
+		display: flex
+		justify-content: center
+		width: 100%
+		height: 30px
+		background-color: #5d7475
+		font-size: 15px
+		img
+		transform: scale(0.7)
+	.nav
+		display: none
+		ul
+			justify-content: center
+			width: 100%
+	#header
+		height: 196px
+	#menu
+		display: flex
+		list-style: none
+		flex-direction: column
+	li
+		padding: 7px
+		img
+		display: none
+
+	#content-members
+		margin-top: 15px

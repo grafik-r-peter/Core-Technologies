@@ -1,184 +1,64 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
-body {
-  margin: 0; }
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 339 of C:/Users/luisa/Desktop/My projects/Core-Technologies/CSS/style.sass
+        from line 1 of C:\Users\luisa\Desktop\My projects\Core-Technologies\CSS\vid.sass
 
-#header {
-  max-height: 280px;
-  background: #272a32;
-  overflow: hidden; }
+334: @media only screen and (max-width: 750px) 
+335: 	.policytext 
+336: 		display: none
+337:   
+338: 
+339:   .footerpics img 
+340: 		display: none
+341:   
+342: 
+343:   .teamname 
+344: 		padding: 80px 0 0 0
 
-#header-img {
-  width: 75%;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center; }
-  #header-img img {
-    width: 100%; }
-
-nav {
-  background-color: rgba(93, 116, 117, 0.6); }
-
-.nav {
-  width: 75%;
-  max-width: 800px;
-  margin: 0 auto; }
-
-#content-members {
-  width: 75%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  transition: 0.5;
-  margin-top: -50px; }
-
-.teamMember {
-  margin: 0 20px;
-  text-align: center; }
-  .teamMember img {
-    width: 100%;
-    border-radius: 100%;
-    max-width: 200px; }
-
-.teaser {
-  padding-top: 10px; }
-  .teaser span {
-    font-size: 1.3em;
-    font-weight: 700; }
-  .teaser p {
-    font-size: 0.9em; }
-
-#insertMember {
-  width: 0;
-  margin: 0; }
-
-body {
-  font-family: "Raleway", sans-serif; }
-
-h1 {
-  font-size: 36px; }
-
-h2 {
-  font-size: 20px; }
-
-h3 {
-  font-size: 28px; }
-
-.overlay-base {
-  position: relative;
-  border-radius: 100%;
-  border: #fff;
-  border-style: solid;
-  border-width: 5px; }
-  .overlay-base img {
-    opacity: 0.4;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease; }
-
-.overlay-base:hover img {
-  opacity: 1;
-  animation: pop 0.3s linear 1; }
-
-.overlay1 {
-  background: #33cc33; }
-
-.overlay2 {
-  background: #ff9900; }
-
-.overlay3 {
-  background: #a22970; }
-
-.overlay4 {
-  background: #b01616; }
-
-.overlay5 {
-  background: #286f75; }
-
-.call-overlay {
-  display: block; }
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto; }
-nav ul li {
-  list-style: none;
-  display: flex;
-  flex-direction: column; }
-nav li a {
-  text-decoration: none;
-  color: white; }
-nav li img {
-  width: 30px;
-  height: auto; }
-
-.active {
-  display: none; }
-
-@media only screen and (max-width: 678px) {
-  .active {
-    display: flex;
-    justify-content: center;
-    border: solid;
-    width: 100%;
-    height: 30px;
-    color: white;
-    background-color: rgba(93, 116, 117, 0.6);
-    font-size: 15px; }
-
-  .nav {
-    display: none; }
-
-  ul {
-    justify-content: center;
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; }
-
-  #menu {
-    display: flex;
-    list-style: none;
-    flex-direction: column; }
-
-  li a {
-    width: 70%;
-    height: 30px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    border: solid;
-    margin-left: 20px;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    background-color: rgba(93, 116, 117, 0.6);
-    font-size: 15px; }
-
-  li img {
-    display: none; } }
-.row {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center; }
-
-div > iframe {
-  width: 40%;
-  height: 400px; }
-
-.text {
-  width: 60%;
-  height: 200px;
-  font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px; }
-
-/*# sourceMappingURL=vid.css.map */
-
-/*# sourceMappingURL=vid.css.map */
+Backtrace:
+C:/Users/luisa/Desktop/My projects/Core-Technologies/CSS/style.sass:339
+C:\Users\luisa\Desktop\My projects\Core-Technologies\CSS\vid.sass:1
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:494:in `block in tabulate'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each_with_index'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `tabulate'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 339 of C:/Users/luisa/Desktop/My projects/Core-Technologies/CSS/style.sass\A         from line 1 of C:\Users\luisa\Desktop\My projects\Core-Technologies\CSS\vid.sass\A \A 334: @media only screen and (max-width: 750px) \A 335: 	.policytext \A 336: 		display: none\A 337:   \A 338: \A 339:   .footerpics img \A 340: 		display: none\A 341:   \A 342: \A 343:   .teamname \A 344: 		padding: 80px 0 0 0"; }
