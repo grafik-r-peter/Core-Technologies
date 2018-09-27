@@ -3,37 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="CSS/style.css">	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<style type="text/css" media="screen">
+	<link rel="stylesheet" href="CSS/style.css">
 
-		#header {
-			height: 280px;
-		}
-
-		.image-snippet1 {
-			background-image: url(img/header.png);
-    		background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: contain;
-		}
-
-		.image-snippet2 {
-			background-image: url(img/header-eva.png);
-    		background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: contain;
-		}
-
-
-	</style>
 	<title></title>
 
 </head>
 
 <body>
 	<div id="wrapper">
-		<header id="header"><!-- /header begins -->
+		<header id="header" class="headerClass"><!-- /header begins -->
 			<nav id="menu" class="nav-overlay">
 
 				<button class="active" onclick="expandMenu()">Home</button>
@@ -83,7 +61,7 @@
 				<div class="teamMember">
 					
 					<div class="overlay-base overlay1" id="team0">
-						<img class="animate wow jello" src="img/andras_500x500.jpg">
+						<img src="img/andras_500x500.jpg">
 					</div>
 
 					<div class="teaser">
@@ -94,7 +72,7 @@
 
 				<div class="teamMember">
 					<div class="overlay-base overlay2" id="team1" >
-						<img class="animate wow jello" src="img/eva_500x500.jpg">
+						<img src="img/eva_500x500.jpg">
 					</div>
 					<div class="teaser">
 						<span class="memberName">Lorem Ipsum </span>
@@ -104,7 +82,7 @@
 				
 				<div class="teamMember">
 					<div class="overlay-base overlay3" id="team2">
-						<img class="animate wow jello" src="img/luisa_500x500.jpg">
+						<img src="img/luisa_500x500.jpg">
 					</div>
 
 					<div class="teaser">
@@ -115,7 +93,7 @@
 
 				<div class="teamMember">
 					<div class="overlay-base overlay4" id="team3">
-						<img class="animate wow jello" src="img/nabil_500x500.jpg">
+						<img src="img/nabil_500x500.jpg">
 					</div>
 					<div class="teaser">
 						<span class="memberName">Lorem Ipsum </span>
@@ -125,7 +103,7 @@
 
 				<div class="teamMember">					
 					<div class="overlay-base overlay5" id="team4">
-						<img class="animate wow jello" src="img/roman_500x500.jpg">
+						<img src="img/roman_500x500.jpg">
 					</div>
 
 					<div class="teaser">
@@ -135,7 +113,7 @@
 				</div>
 
 				<div id="insertMember" class="teamMember">
-					<div id="res"></div>
+					
 					
 				</div>
 			</div>
@@ -145,19 +123,9 @@
 			<div class="policy"></div>
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
-		<div>
-		<input id="img" type="text" placeholder="add url">
-		<input id="name" type="text" placeholder="name">
-		<input id="btn" type="submit" value="Add new members">
-		<div id="container">
-		</div>
-	</div>
 		
 	</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-  new WOW().init();
-</script>
+
 <script type="text/javascript" src="JS/script.js"></script>
 <script type="text/javascript">
 
@@ -170,21 +138,26 @@ for (i=0; i < 5; i++) {
 	changeOverlay.addEventListener('mouseout', mouseOut);
 }
 
+	document.getElementById("menu").style.transition = "all 0.2s";	
+	document.getElementById("header").style.transition = "all 0.2s";
+
 
 function mouseOver(abc) { 
 	if (abc.id == 'team0') {
-	menu.style.background = "#33cc33";
-//	header.classList.add("image-snippet1");
-//	header.style.background = "url(img/header.png)";
+	menu.style.background = "rgba(51, 204, 51, 0.7)";
+	header.style.background = "url(img/header_andras.png)";
 	} 	else if (abc.id == 'team1') {
-		menu.style.background = "#ff9900"; 
-//		header.classList.add("image-snippet2");
+		menu.style.background = "rgba(255, 153, 0, 0.7)"; 
+		header.style.background = "url(img/header_eva.png)";
 	} 	else if (abc.id == 'team2') {
-		menu.style.background = "#a22970"; 
+		menu.style.background = "rgba(162, 41, 112, 0.7)"; 
+		header.style.background = "url(img/header_luisa.png)";
 	} 	else if (abc.id == 'team3') {
-		menu.style.background = "#b01616"; 
-	} 	else if (abc.id == 'team5') {
-		menu.style.background = "#286f75"; 
+		menu.style.background = "rgba(176, 22, 22, 0.7)"; 
+		header.style.background = "url(img/header_nabil.png)";
+	} 	else if (abc.id == 'team4') {
+		menu.style.background = "#rgba(40, 111, 117, 0.7)"; 
+		header.style.background = "url(img/header.png)";
 	} 	else {
 		return false;
 	}	
@@ -192,16 +165,12 @@ function mouseOver(abc) {
 
 function mouseOut() {
 	menu.style.background = "rgba(93, 116, 117, 0.6)"
+	header.style.background = "#272a32";
 }
 
-function member(){
-			var c=document.getElementById("name").value;
-			var a=document.getElementById("img").value;
-return document.getElementById("content-members").innerHTML+="<div class='teamMember'><div><img src='img/"+a+"'></div><div class='teaser'><span class='memberName'>"+c+"</span><p>more about Luisa</p></div></div>"
-		}
-		document.getElementById("btn").onclick=member;
 
 
+	
 </script>
 </body>
 

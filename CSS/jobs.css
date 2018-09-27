@@ -45,3 +45,26 @@
     height: 500px; 
     width: 100%;
 }
+
+
+@media screen and (max-width: 678px) {
+.text {
+    text-align:justify;
+    padding: 40px 20px ;
+    margin: auto;
+  }
+#title {
+    font-size: 30px;
+  }
+.newpost {
+    padding: 20px 20px;
+    margin: 0;
+    background-color:black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    }
+#post, #name, #picture {
+    width: 100%;
+    
+}
