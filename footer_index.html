@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="CSS/style.css">
+
+	<title></title>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header" class="headerClass"><!-- /header begins -->
+			<nav id="menu" class="nav-overlay">
+				<div class="active" onclick="expandMenu()">
+					<img src="img/burger.svg" alt="burger">
+				</div>
+
+				<ul class="nav" id="toggle">
+					<a href="index.html" title="Team">
+						<li><img class="nav-icon" src="icons/team.svg">Team </li>
+					</a>
+
+					<a href="blog.html" title="Blog">
+						<li><img class="nav-icon" src="icons/inclined-pencil.svg">Blog</li>
+					</a>
+
+					<a href="videos.html" title="Videos">
+						<li><img class="nav-icon" src="icons/play-movie.svg">Videos</li>
+					</a>
+
+					<a href="jobs.html" title="Jobs">
+						<li><img class="nav-icon" src="icons/portfolio.svg">Jobs</li>
+					</a>
+
+					<a href="contact.html" title="Contact">
+						<li><img class="nav-icon" src="icons/contact.svg">Contact</li>
+					</a>
+
+				</ul>
+
+			</nav>
+			<div id="header-img">
+
+			</div>
+
+			<!-- <div id="herotext">
+				<h1 class="meetus">Meet our team</h1>
+				<h3 class="phrase"></h3>
+			</div> -->
+
+		</header>  <!-- /header ends-->
+
+		<div id="content"> <!-- /main content begins -->
+			<div id="content-members">
+
+				<div class="teamMember">
+					<div class="overlay-base overlay1" id="team0">
+						<a href="personalPages/andras.html"><img src="img/andras_500x500.jpg"></a>
+					</div>
+
+					<div class="teaser">
+						<span class="memberName">Andras Rakoczy </span>
+						<p>Junior Developer<br>
+						andrasrkoczy88@gmail.com</p>
+					</div>
+				</div>
+
+				<div class="teamMember">
+					<div class="overlay-base overlay2" id="team1" >
+						<a href="personalPages/eva.html"><img src="img/eva_500x500.jpg"></a>
+					</div>
+					<div class="teaser">
+						<span class="memberName">Eva Timea Bukli </span>
+						<p>Junior Developer<br>
+						vica.bukli@gmail.com</p>
+					</div>
+				</div>
+				
+				<div class="teamMember">
+					<div class="overlay-base overlay3" id="team2">
+						<a href="personalPages/luisa.html"><img src="img/luisa_500x500.jpg"></a>
+					</div>
+
+					<div class="teaser">
+						<span class="memberName">Luísa Nogueira </span>
+						<p>Junior Developer<br>
+						luisa.nogueira@outlook.com</p>
+					</div>
+				</div>
+
+				<div class="teamMember">
+					<div class="overlay-base overlay4" id="team3">
+						<a href="personalPages/Nabil.html"><img src="img/nabil_500x500.jpg"></a>
+					</div>
+					<div class="teaser">
+						<span class="memberName">MHD Nabil Serri Charif </span>
+						<p>Junior Developer<br>
+						nabeel.serri@gmail.com</p>
+					</div>
+				</div>
+
+				<div class="teamMember">					
+					<div class="overlay-base overlay5" id="team4">
+						<a href="personalPages/roman.html"><img src="img/roman_500x500.jpg"></a>
+					</div>
+
+					<div class="teaser">
+						<span class="memberName">Roman Peter </span>
+						<p>Junior Developer<br>
+						probably.not.real@gmeil.com</p>
+					</div>
+				</div>
+
+				<div id="insertMember" class="teamMember">
+					<div id="res"></div>
+					
+				</div>
+			</div>
+		</div> <!-- /main content ends -->
+		
+		<div>
+		<input id="img" type="text" placeholder="add url">			<!-- whats this? -->
+		<input id="name" type="text" placeholder="name">    		<!-- whats this? -->
+		<input id="btn" type="submit" value="Add new members">		<!-- whats this? -->
+		<div id="container"> </div>									<!-- whats this? -->
+		</div>
+
+		<div id="footer"> <!-- footer begins here -->
+			<div class="footerpics">
+				<div class="policy">
+					<a href="https://www.youtube.com/watch?v=I_izvAbhExY">
+						<img src="img/shield-1086703_640.png">
+					</a>
+					<p class="policytext">Privacy Policy</p>
+				</div>
+				<div class="logo">
+					<img src="img/codefactory-vienna-logo.png">
+				</div>
+			</div>
+			<div class="teamname">
+				<p>The Git Monkeys - CodeFactory 2018</p>
+			</div>
+		</div> <!-- /footer ends here -->
+		
+		
+	</div>
+
+<script type="text/javascript" src="JS/script.js"></script>
+<script type="text/javascript">
+
+
+
+var navToOverlay = document.getElementById('menu');
+for (i=0; i < 5; i++) {
+	var changeOverlay = document.getElementById('team'+i);
+	changeOverlay.addEventListener('mouseover', function(){ mouseOver(this)});
+	changeOverlay.addEventListener('mouseout', mouseOut);
+}
+
+
+var navToOverlay = document.getElementById('menu');
+for (i=0; i < 5; i++) {
+	var changeOverlay = document.getElementById('team'+i);
+	changeOverlay.addEventListener('mouseover', function(){ mouseOver(this)});
+	changeOverlay.addEventListener('mouseout', mouseOut);
+}
+
+	document.getElementById("menu").style.transition = "all 0.4s";	
+	document.getElementById("header").style.transition = "all 0.4s";
+
+
+function mouseOver(abc) { 
+	if (abc.id == 'team0') {
+	menu.style.background = "rgba(51, 204, 51, 0.7)";
+	header.style.background = "url(img/header_andras.png)";
+	} 	else if (abc.id == 'team1') {
+		menu.style.background = "rgba(255, 153, 0, 0.7)"; 
+		header.style.background = "url(img/header_eva.png)";
+	} 	else if (abc.id == 'team2') {
+		menu.style.background = "rgba(162, 41, 112, 0.7)"; 
+		header.style.background = "url(img/header_luisa.png)";
+	} 	else if (abc.id == 'team3') {
+		menu.style.background = "rgba(176, 22, 22, 0.7)"; 
+		header.style.background = "url(img/header_nabil.png)";
+	} 	else if (abc.id == 'team4') {
+		menu.style.background = "rgba(40, 111, 117, 0.7)"; 
+		header.style.background = "url(img/header_roman.png)";
+	} 	else {
+		return false;
+	}	
+}
+
+function mouseOut() {
+	menu.style.background = "rgba(93, 116, 117, 0.6)";
+	header.style.background = "url(img/header.png)";
+}
+
+function member(){
+			var c=document.getElementById("name").value;
+			var a=document.getElementById("img").value;
+return document.getElementById("content-members").innerHTML+="<div class='teamMember'><div><img src='img/"+a+"'></div><div class='teaser'><span class='memberName'>"+c+"</span><p>more about Luisa</p></div></div>"
+		}
+		document.getElementById("btn").onclick=member;
+
+// "#272a32"
+</script>
+</body>
+
+</html>
