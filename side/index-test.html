@@ -36,7 +36,7 @@
 		<header id="header"><!-- /header begins -->
 			<nav id="menu" class="nav-overlay">
 
-				<button class="active" onclick="expandMenu()">Home</button>
+				<button class="active-side" onclick="expandMenu()">Home</button>
 
 				<ul class="nav" id="toggle">
 					<li>
@@ -68,7 +68,6 @@
 
 			</nav>
 			<div id="header-img">
-
 			</div>
 
 			<!-- <div id="herotext">
@@ -79,9 +78,24 @@
 		</header>  <!-- /header ends-->
 
 		<div id="content"> <!-- /main content begins -->
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <div id="input">
+			  <center>
+			<img src="img/users.png" alt="">
+			<input id="img" type="text" placeholder="add url">
+			<input id="name" type="text" placeholder="name">
+			<button id="btn" type="submit">
+				
+				Add new members
+				
+			</button>
+		</center>
+	</div>
+			</div>
+			<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776;<span id="mobile-list"> Add New Member</span></span>
 			<div id="content-members">
 				<div class="teamMember">
-					
 					<div class="overlay-base overlay1" id="team0">
 						<img class="animate wow jello" src="img/andras_500x500.jpg">
 					</div>
@@ -140,19 +154,10 @@
 				</div>
 			</div>
 		</div> <!-- /main content ends -->
-
 		<div id="footer"> <!-- footer begins here -->
 			<div class="policy"></div>
 			<div class="logo"></div>
 		</div> <!-- /footer ends here -->
-		<div>
-		<input id="img" type="text" placeholder="add url">
-		<input id="name" type="text" placeholder="name">
-		<input id="btn" type="submit" value="Add new members">
-		<div id="container">
-		</div>
-	</div>
-		
 	</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
@@ -201,7 +206,14 @@ return document.getElementById("content-members").innerHTML+="<div class='teamMe
 		}
 		document.getElementById("btn").onclick=member;
 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+
+}
 </script>
 </body>
 
