@@ -179,6 +179,51 @@ nav
 .active
 	display: none
 
+///sidenav///
+
+.sidenav
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	background-color: #111
+	overflow-x: hidden
+	transition: 0.5s
+	padding-top: 60px
+	a
+		text-decoration: none
+		font-size: 25px
+		color: #818181
+		display: block
+		transition: 0.3s
+		&:hover
+			color: #f1f1f1
+.closebtn
+	position: absolute
+	top: 0
+	right: 25px
+	font-size: 36px
+	margin-left: 50px
+
+#input
+	padding-top: 50px
+
+	img
+		width: 200px
+		margin-top: 10px
+	input
+		width: 100%
+		height: 25px
+#btn
+	background: #272a32
+	height: 50px
+	width: 100%
+	border-radius: 5px
+	font-size: 22px
+	color: white
+
 
 
 	/// SOME STYLING FOR SUBPAGES ///
@@ -202,7 +247,14 @@ nav
 		font-size: 15px	
 
 		img
-			transform: scale(0.7)
+			width: 30px
+			transition: 0.2s
+
+		img:hover 
+			transform: rotate(90deg)
+			width: 20px
+			cursor: pointer
+
 
 	.nav
 		display: none
@@ -230,4 +282,8 @@ nav
 		margin-top: 15px
 
 
-
+	li img
+		display: none
+		
+	#mobile-list
+		display: none
