@@ -232,6 +232,10 @@ nav li img {
     width: 100%;
 }
 
+#imag1 {
+    background-image:url("../img/code-2620118_1920.jpg");
+    height:100px;
+}
 
 @media screen and (max-width: 678px) {
 .text {
