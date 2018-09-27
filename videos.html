@@ -4,46 +4,50 @@
 	<title>vid</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CSS/vid.css">
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 	<div id="wrapper">
-		<header id="header"><!-- /header begins -->
+		<header id="header" class="headerClass"><!-- /header begins -->
+			<nav id="menu" class="nav-overlay">
+				<div class="active" onclick="expandMenu()">
+					<img src="img/burger.svg" alt="burger">
+				</div>
 
-			<nav id="menu">
-				<ul class="nav">
-					<li>
-						<img src="icons/team.svg">
-						<a href="#" title="Team">Team</a>
-					</li>
+				<ul class="nav" id="toggle">
+					<a href="index.html" title="Team">
+						<li><img class="nav-icon" src="icons/team.svg">Team </li>
+					</a>
 
-					<li>
-						<img src="icons/inclined-pencil.svg">
-						<a href="#" title="Blog">Blog</a>
-					</li>
+					<a href="blog.html" title="Blog">
+						<li><img class="nav-icon" src="icons/inclined-pencil.svg">Blog</li>
+					</a>
 
-					<li>
-						<img src="icons/play-movie.svg">
-						<a href="#" title="Videos">Videos</a>
-					</li>
+					<a href="videos.html" title="Videos">
+						<li><img class="nav-icon" src="icons/play-movie.svg">Videos</li>
+					</a>
 
-					<li>
-						<img src="icons/portfolio.svg">
-						<a href="#" title="Jobs">Jobs</a>
-					</li>
+					<a href="jobs.html" title="Jobs">
+						<li><img class="nav-icon" src="icons/portfolio.svg">Jobs</li>
+					</a>
 
-					<li>
-						<img src="icons/contact.svg">
-						<a href="#" title="Contact">Contact</a>
-					</li>
+					<a href="contact.html" title="Contact">
+						<li><img class="nav-icon" src="icons/contact.svg">Contact</li>
+					</a>
 
 				</ul>
-			</nav>
 
-			<div id="herotext">
-				<h1 class="meetus"></h1>
-				<h3 class="phrase"></h3>
+			</nav>
+			<div id="header-img">
+
 			</div>
-		</header><!-- /header ends-->
+
+			<!-- <div id="herotext">
+				<h1 class="meetus">Meet our team</h1>
+				<h3 class="phrase"></h3>
+			</div> -->
+
+		</header> 
 		<div id="main-content"><!-- /main-content begins -->
 			<div class="row">
 				<div class="left">
